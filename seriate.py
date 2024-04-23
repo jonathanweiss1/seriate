@@ -10,7 +10,7 @@ from packaging.version import Version
 __version__ = "1.0.1"
 ortools_version = Version(ortools.__version__)
 ortools6 = Version("6.0.0") <= ortools_version < Version("7")
-ortools7 = Version("7.0.0") <= ortools_version < Version("8")
+ortools7 = Version("7.0.0") <= ortools_version
 if not ortools6 and not ortools7:
     raise ImportError("No valid version of ortools installed. Please install ortools 6 or 7.")
 
